@@ -17,6 +17,3 @@ DJ-Live is a dynamic community playlist that is intended for groups small and la
 The ‘develop’ branch contains the most current version of our Android project. We used Android Studio to develop our project, and the DJ Live Android application can be run on any Android device with OS version 5.0 or higher. If you are running the application from Android Studio, you will have to include Google Repository from the Android SDK. To run the project via the Android Studio emulator, the desktop/laptop must support hardware acceleration.
 
 ![alt tag](https://github.com/srutstein21/DJ-Live-Android/blob/develop/soundandcolor.gif)
-
-
-"# DJ-Live_Android" 
