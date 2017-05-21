@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "981239117984",
+    "firebase_url": "https://dj-live.firebaseio.com",
+    "project_id": "dj-live",
+    "storage_bucket": "dj-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981239117984:android:dfddc3328f2c3578",
+        "android_client_info": {
+          "package_name": "com.djlive.djlive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981239117984-9dvsosdovaf0npcttg31mu5km67co1ah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.djlive.djlive",
+            "certificate_hash": "2D7570B20C9CF3ACCF5A3F77F924F78FC175B2F9"
+          }
+        },
+        {
+          "client_id": "981239117984-06b5btutactc8t9ub2ovv5nou7f96g2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.djlive.djlive",
+            "certificate_hash": "A343F8AAEEA912D7A4B8E958A78572DDF36FCC50"
+          }
+        },
+        {
+          "client_id": "981239117984-tj2kh76dlt6qg929bda7r2ajmrfj2tdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWlcDBNYOMp-DNuEVp8cKD1Sgk02vZ0DE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981239117984-nkscv62urocana4og127l0ici42b08j3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.djlive.djlive"
+              }
+            },
+            {
+              "client_id": "981239117984-tj2kh76dlt6qg929bda7r2ajmrfj2tdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

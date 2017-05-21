@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    xmlns:Android="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_song"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="70dp"
+        card_view:cardCornerRadius="4dp"
+        card_view:elevation="14dp"
+        card_view:cardBackgroundColor="@color/colorCardViewBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp">
+
+            <!-- album image for each user -->
+            <ImageView
+                android:id="@+id/iv_search_album"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_song_name"
+                android:layout_toRightOf ="@+id/iv_search_album"
+                android:layout_marginLeft= "5dp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/btnAddSong"
+                android:ellipsize="end"
+                android:maxLines="1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_song_subtitle"
+                android:textColor="#FFFFFF"
+                android:layout_toRightOf ="@+id/iv_search_album"
+                android:layout_toLeftOf="@+id/btnAddSong"
+                android:layout_marginLeft= "5dp"
+                android:layout_below="@+id/tv_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:maxLines="1">
+            </TextView>
+
+            <Button
+                android:id="@+id/btnAddSong"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:stateListAnimator="@null"
+                android:background="@drawable/ic_add_white_24dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

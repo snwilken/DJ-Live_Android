@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_playlistSession"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PlaylistSessionActivity">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/fragment_player">
+
+            <!--vertical linearlayout which implements scrolling gestures-->
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/abl_playlist_session"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:id="@+id/ctl_playlist_session"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dj_live_background_header"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlways"
+                    app:scrimVisibleHeightTrigger="5dp"
+                    app:titleEnabled="false">
+
+                    <android.support.percent.PercentRelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/activity_user_setup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <!--need to add code to resize image-->
+                        <ImageView
+                            android:id="@+id/iv_album_art"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="16dp"
+                            android:adjustViewBounds="true"
+                            android:contentDescription="@string/currently_playing_image"
+                            android:elevation="16dp"
+                            android:fitsSystemWindows="true"
+                            android:src="@drawable/dj_live_icon_white_text"
+                            app:layout_collapseMode="parallax"
+                            app:layout_heightPercent="60%"
+                            app:layout_widthPercent="60%"/>
+
+                        <TextView
+                            android:id="@+id/tv_song_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_album_art"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginTop="10dp"
+
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:gravity="center"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:maxLines="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="24sp"/>
+
+                    </android.support.percent.PercentRelativeLayout>
+
+                    <!--pinned toolbar that stores the tabbed activities-->
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/tb_playlist_session"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:gravity="top"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:titleMarginTop="15dp"/>
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tbl_playlist_session"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="bottom"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:layout_collapseMode="pin"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/colorTextAccent"
+                        app:tabIndicatorHeight="2dp"
+                        app:tabTextColor="@color/colorTextAccent"/>
+
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_playlist_session"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/fragment_player"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/fragment_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/cardview_dark_background"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btnPlay"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_play_arrow_white_24dp"
+                android:onClick="playOrPauseButtonClicked"
+                android:layout_marginEnd="25dp"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/btnSkip"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_skip_next_white_24dp"
+                android:onClick="skipSongButtonClicked"
+                android:layout_marginStart="25dp"
+                android:enabled="false"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv_playlistSession"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorCardViewBackground"
+        app:itemIconTint="@color/colorDivider"
+        app:itemTextColor="@color/colorDivider"
+        app:menu="@menu/drawer_layout"/>
+
+</android.support.v4.widget.DrawerLayout>

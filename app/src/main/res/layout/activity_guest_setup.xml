@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_guest_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.djlive.djlive.GuestSetupActivity"
+    android:background="@color/colorPrimaryBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilHostName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/etHostName"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f1d0f7"
+            android:textColorHint="#f1d0f7"
+            android:hint="Host Spotify Name"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilPasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/etPasscode"
+            android:textColorHint="#f1d0f7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Passcode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"
+            android:textColor="#f1d0f7" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilGuestUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/etGuestUsername"
+            android:textColorHint="#f1d0f7"
+            android:textSize="18dp"
+            android:textColor="#f1d0f7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Custom Username"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="Join This Playlist"
+        android:textSize="18dp"
+        android:background="@drawable/button_guest"
+        android:textColor="@color/colorLightText"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:onClick="onJoinPlaylistButtonClicked"
+        android:id="@+id/btnJoin"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="end" />
+</LinearLayout>

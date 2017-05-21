@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DJ Live</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- BUTTON TEXT : UserSetupActivity -->
+    <string name="join_a_playlist">Join A Playlist</string>
+    <string name="host_a_playlist">Host A Playlist</string>
+
+
+    <!-- BUTTON TEXT : PlaylistSetupActivity -->
+    <string name="create">Create</string>
+    <string name="back">Back</string>
+
+    <!-- PlaylistSessionActivity -->
+    <string name="currently_playing">Currently Playing</string>
+    <string name="song_artist">Artist</string>
+    <string name="song_title">Title</string>
+
+    <!-- KEYS: PlaylistSettingsActivity -->
+    <string name="playlist_name">playlistName</string>
+    <string name="pin">pin</string>
+    <string name="songs_per_user">songsPerUser</string>
+    <string name="allow_explicit">allowExplicit</string>
+    <string name="max_length">maxLength</string>
+    <string name="max_guests">maxGuests</string>
+    <string name="time_stamp">timeStamp</string>
+    <string name="user_local_queue_title">Your Songs</string>
+    <string name="spotify_search_title">Search Spotify</string>
+    <string name="playlist_title">Playlist</string>
+    <string name="contributing_users_title">Users</string>
+
+    <!-- Search Activity -->
+    <string name="no_matches_found">No Matches Found</string>
+    <string name="search_label">Search Spotify</string>
+    <string name="add_song">+</string>
+
+    <!-- Menu -->
+    <string name="search_song">Search for Song</string>
+
+
+    <!-- Navigation Drawer -->
+    <string name="logout">Log out</string>
+    <string name="host_settings">Host Settings</string>
+    <string name="settings_playlist_name">Playlist:&#160;</string>
+    <string name="settings_allow_explicit">Allows Explicit Songs</string>
+    <string name="settings_doesnt_allow_explicit">Does Not Allow Explicit Songs</string>
+    <string name="settings_max_number_of_guests">Max Number of Guests:&#160;</string>
+    <string name="settings_max_song_length">Max Song Length:&#160;</string>
+    <string name="settings_songs_per_guest">Songs Per Guest:&#160;</string>
+    <string name="settings_minutes">&#160;mins</string>
+    <string name="settings_playlist_pin">Passcode:&#160;</string>
+
+    <!--accessible descriptions-->
+    <string name="icon_description">DJ Live Icon: Abstract DJ Live Icon: Abstract turn table
+        in purple and white with white text.</string>
+    <string name="search_hint">Search for a song</string>
+    <string name="contributing_user_description">generic image for contributing users</string>
+    <string name="currently_playing_image">Album art associated with the currently playing song</string>
+
+
+
+
+
+
+
+</resources>

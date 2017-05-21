@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_user_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dj_live_background"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:text="@string/join_a_playlist"
+        android:textColor="@color/textWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnJoin"
+        android:onClick="onGuestButtonClicked"
+        android:layout_weight="0.04"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_right"
+        app:layout_widthPercent="50%"/>
+
+    <Button
+        android:text="@string/host_a_playlist"
+        android:textColor="@color/textWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHost"
+        android:onClick="onHostButtonClicked"
+        android:layout_weight="0.09"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/left_button"
+        app:layout_widthPercent="50%"/>
+
+    <ImageView
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/dj_live_icon_white_text"
+        app:layout_marginTopPercent="20%"
+        android:layout_weight="1"
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="30%"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imgIcon" />
+
+</android.support.percent.PercentRelativeLayout>

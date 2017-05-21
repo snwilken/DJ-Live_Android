@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistSetupActivity"
+    android:background="@color/colorPrimaryBackground">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlistSettingsContainer"
+        android:layout_above="@+id/btnSettingsBack"
+        android:layout_below="@+id/spotifyBtnLayout"
+        >
+
+    </FrameLayout>
+
+    <Button
+        android:text="@string/back"
+        android:textColor="@color/textWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettingsBack"
+        android:onClick="onSettingsBackButtonClicked"
+        android:layout_weight="0.09"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/left_button"
+        app:layout_widthPercent="50%"/>
+
+    <Button
+        android:text="@string/create"
+        android:textColor="@color/textWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettingsCreate"
+        android:onClick="onSettingsCreateButtonClicked"
+        android:layout_weight="0.04"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_right"
+        app:layout_widthPercent="50%"/>
+
+    <RelativeLayout
+        android:id="@+id/spotifyBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="Log in to Spotify Premium"
+            android:textColor="@color/colorLightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loggedInAs"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="5dp"/>
+
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="32dp"
+            app:srcCompat="@drawable/spotify_logo_cmyk_black"
+            android:id="@+id/imageView"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="true"
+            android:onClick="spotifyLoginClick"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorLightText"
+            android:stateListAnimator="@null"
+            android:layout_width="85dp"
+            android:layout_height="35dp"
+            android:background="@color/colorPrimaryBackground"/>
+
+
+    </RelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

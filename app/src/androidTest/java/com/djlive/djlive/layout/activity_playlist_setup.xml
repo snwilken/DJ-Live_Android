@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistSetupActivity"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playlistSettingsContainer"
+        android:layout_above="@+id/btnSettingsBack"
+        android:layout_alignParentTop="true">
+
+    </FrameLayout>
+
+    <Button
+        android:text="@string/back"
+        android:textColor="@color/textWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettingsBack"
+        android:onClick="onSettingsBackButtonClicked"
+        android:layout_weight="0.09"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/user_setup_button_left"
+        app:layout_widthPercent="50%"/>
+
+    <Button
+        android:text="@string/create"
+        android:textColor="@color/textWhite"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSettingsCreate"
+        android:onClick="onSettingsCreateButtonClicked"
+        android:layout_weight="0.04"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/user_setup_button_right"
+        app:layout_widthPercent="50%"/>
+
+</android.support.percent.PercentRelativeLayout>

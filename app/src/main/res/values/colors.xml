@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PRIMARY COLORS -->
+    <color name="colorDarkPrimary">#671c87</color>
+    <color name="colorPrimary">#7c21a3</color>
+    <color name="colorPrimaryBackground">#9d29b0</color>
+    <color name="colorLightPrimary">#e17bf2</color>
+    <color name="colorLightText">#f1d0f7</color>
+    <color name="colorTextPrimary">#212121</color>
+
+    <!-- SECONDARY COLORS -->
+    <color name="colorAccent">#6ea89f</color>
+    <color name="colorTextAccent">#FFFFFF</color>
+    <color name="colorGrayText">#b4b4b4</color>
+    <color name="colorPlaylistBackground">#757575</color>
+    <color name="colorCardViewBackground">#616161</color>
+    <color name="colorCardViewBackgroundDark">#252525</color>
+    <color name="colorDarkSecondary">#662079</color>
+    <color name="colorDivider">#d1d1d1</color>
+
+    <!-- TERTIARY COLORS -->
+    <color name="colorTertiary">#6309e3</color>
+    <color name="colorDarkTertiary">#4b08ab</color>
+
+    <!-- TEXT COLORS -->
+    <color name="textWhite">#FFFFFF</color>
+</resources>

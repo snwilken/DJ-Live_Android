@@ -1,0 +1,73 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:orderingFromXml="false">
+
+    <PreferenceCategory
+        android:title="Playlist Settings">
+
+        <EditTextPreference
+            android:title="Playlist Name"
+            android:summary="The name that will be shown to your guests"
+            android:textColor="@color/colorDarkPrimary"
+            android:key="@string/playlist_name"
+            android:defaultValue="Playlist"
+            android:inputType="text"
+            android:maxLength="30"
+            android:selectAllOnFocus="true"/>
+
+        <EditTextPreference
+            android:title="Pin"
+            android:textColor="@color/colorDarkPrimary"
+            android:summary="Pin the guests must enter to connect"
+            android:key="@string/pin"
+            android:defaultValue="123456"
+            android:inputType="number|none"
+            android:maxLength="6"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"/>
+
+        <SwitchPreference
+            android:title="Allow Explicit"
+            android:textColor="@color/colorDarkPrimary"
+            android:summary="Let guests add explicit songs to the playlist"
+            android:key="allowExplicit"
+            android:defaultValue="false"/>
+
+        <EditTextPreference
+            android:title="Songs Per User"
+            android:textColor="@color/colorDarkPrimary"
+            android:summary="Maximum number of songs a guest can add to the playlist"
+            android:key="@string/songs_per_user"
+            android:defaultValue="5"
+            android:inputType="number|none"
+            android:numeric="integer"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"/>
+
+        <EditTextPreference
+            android:title="Max Song Length"
+            android:textColor="@color/colorDarkPrimary"
+            android:summary="Maximum duration of a song in minutes"
+            android:key="@string/max_length"
+            android:defaultValue="7"
+            android:inputType="number|none"
+            android:numeric="integer"
+            android:maxLength="4"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"/>
+
+        <EditTextPreference
+            android:title="Number of Guests"
+            android:textColor="@color/colorDarkPrimary"
+            android:summary="Maximum number of guests allowed at one time"
+            android:key="@string/max_guests"
+            android:defaultValue="10"
+            android:inputType="number|none"
+            android:numeric="integer"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>
