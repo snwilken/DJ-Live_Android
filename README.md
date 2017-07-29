@@ -1,5 +1,5 @@
 # DJ-Live-Android
-![alt tag](https://github.com/srutstein21/DJ-Live-Android/blob/develop/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+![alt tag](https://github.com/sumswilken/DJ-Live_Android/blob/master/app/src/main/res/drawable-xxxhdpi/ic_launcher.png)
 
 DJ-Live is a dynamic community playlist that is intended for groups small and large. Users can choose to either host a playlist for their group, or join and add songs to an existing playlist in their area. Powered by Spotify, users can search a wide range of songs, artists, and genres to create the perfect mood for their group. Hosts can configure settings about their playlists such as whether or not to allow duplicate songs, toggling explicit content filters, restricting song additions from each user, and many more options. In addition, hosts can secure their playlists with a system-generated passcode to avoid song additions from non-group members.  
 
